@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="How I think about clear, practical notes"
+  description="A small personal system for learning, saving, and acting without getting lost in research loops."
+>
+  <section class="section">
+    <h1>Clear notes, not research loops.</h1>
+    <p>This site is a working notebook for a simple idea: if it is not practical, it is not finished yet.</p>
+    <p>I share short how-to notes with real steps, real caveats, and just enough background to avoid wasted searching later.</p>
+  </section>
+
+  <section class="section">
+    <h2>How I work</h2>
+    <div class="list">
+      <div class="list-item card">
+        <p style="font-weight:600">Stop browsing</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.25rem">First pass: search terms, site: filters, saved tab groups. After 20 minutes, stop even if nothing feels "enough."</p>
+      </div>
+      <div class="list-item card">
+        <p style="font-weight:600">Open three sources</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.25rem">One overview, one practitioner explainer, one primary source or official guidance. That is usually enough.</p>
+      </div>
+      <div class="list-item card">
+        <p style="font-weight:600">Write it in your words</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.25rem">One paragraph. One step you would actually do. If you can not explain the action, you do not have a how-to yet.</p>
+      </div>
+      <div class="list-item card">
+        <p style="font-weight:600">Check before saving</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.25rem">One fact check, one source link, one date. If it feels urgent, slow down; urgency is usually noise.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Recent notes</h2>
+    <div class="list">
+      <a href="/guide/" class="list-item card" style="display:block;text-decoration:none">
+        <span style="font-weight:500;color:var(--color-ink)">A fast checklist for noisy mornings</span>
+        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.25rem">Updated recently</span>
+      </a>
+      <a href="/guide/" class="list-item card" style="display:block;text-decoration:none">
+        <span style="font-weight:500;color:var(--color-ink)">How I stopped repeating searches for the same topic</span>
+        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.25rem">Updated recently</span>
+      </a>
+      <a href="/guide/" class="list-item card" style="display:block;text-decoration:none">
+        <span style="font-weight:500;color:var(--color-ink)">Writing notes you will actually reread</span>
+        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.25rem">Updated recently</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section callout">
+    <p style="color:var(--color-ink);margin:0">Start with the guide if you want one concrete workflow instead of philosophy.</p>
+    <p style="margin-top:0.5rem">
+      <a href="/guide/" style="font-weight:600;text-decoration:underline;text-underline-offset:2px">Open the guide -></a>
+    </p>
+  </section>
+</BaseLayout>
