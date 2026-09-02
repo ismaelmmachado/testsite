@@ -1,59 +1,73 @@
 ---
 name: testsite
-description: Minimal, practical tutorial notebook for AI workflow learning.
+description: Clean studio visual identity for practical AI workflow tutorials.
 colors:
   ink: "#111318"
   ink-muted: "#5b5f6b"
   surface: "#ffffff"
-  surface-raised: "#f6f6f8"
+  surface-raised: "#f8f8fa"
   border: "#e4e4e7"
-  accent: "#2563eb"
-  accent-hover: "#1d4ed8"
+  accent: "#0d7d71"
+  accent-hover: "#07635b"
   navy: "#0f172a"
   teal: "#0d7d71"
   teal-hover: "#07635b"
   warm: "#f4efe6"
   rose: "#c87b7b"
+  focus-ring: "#2563eb"
 typography:
   heading:
     fontFamily: "Merriweather, Georgia, serif"
     fontWeight: 700
+    fontSize: "clamp(2rem, 5vw, 3rem)"
     lineHeight: 1.25
-    letterSpacing: "-0.01em"
+    letterSpacing: "-0.02em"
+  title:
+    fontFamily: "Merriweather, Georgia, serif"
+    fontWeight: 700
+    fontSize: "1.05rem"
+    lineHeight: 1.25
   body:
     fontFamily: "Inter, system-ui, sans-serif"
     fontSize: "17px"
-    lineHeight: 1.65
+    lineHeight: 1.6
   label:
     fontFamily: "Inter, system-ui, sans-serif"
     fontWeight: 600
-    fontSize: "0.85rem"
+    fontSize: "0.88rem"
     lineHeight: 1.4
+  caption:
+    fontFamily: "Merriweather, Georgia, serif"
+    fontWeight: 600
+    fontSize: "1.85rem"
+    lineHeight: 1.4
+  mono:
+    fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace"
 rounded:
-  sm: "0.35rem"
-  md: "0.5rem"
-  lg: "0.75rem"
-  xl: "1rem"
+  sm: "0.2rem"
+  md: "0.35rem"
+  lg: "0.5rem"
+  xl: "0.65rem"
 spacing:
   xs: "0.35rem"
   sm: "0.5rem"
   md: "0.75rem"
-  lg: "1rem"
-  xl: "1.5rem"
-  xxl: "2.75rem"
-  page: "3rem"
+  lg: "1.25rem"
+  xl: "2rem"
+  xxl: "3.25rem"
+  page: "3.5rem"
 components:
   button-primary:
     backgroundColor: "{colors.teal}"
     textColor: "#ffffff"
     rounded: "{rounded.lg}"
-    padding: "0.85rem 1.6rem"
+    padding: "0.8rem 1.5rem"
   button-secondary:
     backgroundColor: "transparent"
-    textColor: "#ffffff"
-    border: "2px solid #ffffff"
+    textColor: "{colors.ink}"
+    border: "1.5px solid {colors.border}"
     rounded: "{rounded.lg}"
-    padding: "0.85rem 1.6rem"
+    padding: "0.8rem 1.5rem"
   card:
     border: "1px solid {colors.border}"
     rounded: "{rounded.md}"
@@ -63,42 +77,43 @@ components:
     background: "{colors.surface-raised}"
   nav-link:
     color: "{colors.ink-muted}"
-    fontSize: "0.9rem"
+    fontSize: "0.88rem"
+  focus-ring:
+    color: "#2563eb"
 ---
 
 # Design System: testsite
 
 ## Overview
 
-**Creative North Star: "The Working Notebook"**
+**Creative North Star: "The Clean Studio"**
 
-testsite should feel like a clean, trusted notebook for practical AI workflows: calm, scannable, and quietly opinionated. The visual system favors restraint, readable hierarchy, and reusable structure over decorative noise. Brand presence is minimal; the content and actionability carry the experience.
+testsite is a clean studio: light, structured, and restrained. The interface reads as an organized workspace rather than a notebook or blog. Every element is intentional; whitespace, typography, and thin structure do the work.
 
 **Key Characteristics:**
-- Token-first rather than inline-style driven
-- Calm editorial palette with restrained teal accent
-- Clear card-based hierarchy
-- Accessible focus and navigation states
-- Responsive from mobile through desktop without visual churn
+- Clean studio palette: mostly neutral surfaces with restrained teal action
+- Strong typographic hierarchy with compact headings
+- Thin borders, minimal shadows, structured grid
+- Token-first and low-decorative-noise
+- Accessible navigation and focus states
 
 ## Colors
 
-Use color sparingly. Neutral surfaces dominate; accent appears only at meaningful actions and light emphasis.
+Use color sparingly. Neutral surfaces dominate; teal appears only at meaningful actions and light emphasis.
 
 ### Primary
-- **Teal Action** (`#0d7d71`): primary CTA and light accent surfaces. Used for primary buttons, hover emphasis, and restrained UI highlights.
+- **Teal Action** (`#0d7d71`): primary CTA and active state emphasis. Used for primary buttons and focused indicators.
 
 ### Secondary
 - **Navy Structure** (`#0f172a`): headings, active states, and structural hierarchy.
 
 ### Accent
-- **Blue Link** (`#2563eb`): prose links and occasional attention cue.
+- **Muted Ink** (`#5b5f6b`): secondary text, metadata, and captions.
 
 ### Neutral
 - **Ink** (`#111318`): body text.
-- **Muted Ink** (`#5b5f6b`): secondary text, metadata, and captions.
-- **Surface** (`#ffffff`): default card/page background.
-- **Raised Surface** (`#f6f6f8`): elevated cards and callouts.
+- **Surface** (`#ffffff`): default page and card background.
+- **Raised Surface** (`#f8f8fa`): elevated cards and grouping surfaces.
 - **Border** (`#e4e4e7`): dividers and container edges.
 - **Warm Paper** (`#f4efe6`): reserved for restrained warm surfaces.
 - **Rose** (`#c87b7b`): reserved for error or caution states.
@@ -112,13 +127,14 @@ Use color sparingly. Neutral surfaces dominate; accent appears only at meaningfu
 **Body Font:** Inter, system-ui, sans-serif
 **Label Font:** Inter, system-ui, sans-serif
 
-**Character:** A practical, editorial pairing. Headings feel authoritative but not formal; body text stays highly readable and neutral.
+**Character:** A clean, editorial pairing. Headings are confident and compact; body text stays highly readable and neutral.
 
 ### Hierarchy
-- **Heading** (`700`, `clamp(2rem, 5vw, 3rem)` approx, line-height `1.25`): page titles and hero headline.
+- **Heading** (`700`, `clamp(2rem, 5vw, 3rem)`, line-height `1.25`): page titles and hero headline.
 - **Title** (`700`, `1.05rem`, line-height `1.25`): card titles and section headers.
-- **Body** (`400`, `17px`, line-height `1.65`): paragraphs and long-form reading.
-- **Label** (`600`, `0.85rem`, line-height `1.4`): metadata, nav, and supporting captions.
+- **Body** (`400`, `17px`, line-height `1.6`): paragraphs and long-form reading.
+- **Label** (`600`, `0.88rem`, line-height `1.4`): metadata, nav, and supporting captions.
+- **Caption** (`600`, `1.85rem`, line-height `1.4`): small-screen headline fallback.
 
 ### Named Rules
 **The One Type Rule.** One heading role per section; avoid stacking multiple heading weights in the same card.
@@ -129,7 +145,7 @@ Container-first, centered reading width with responsive grid breakpoints at `768
 
 ## Elevation & Depth
 
-Flat-by-default surfaces with light elevation on interactive cards. Shadows are restrained and state-linked rather than decorative.
+Flat-by-default surfaces with light structure on cards. Shadows are restrained and state-linked rather than decorative.
 
 ### Shadow Vocabulary
 - **Card Shadow** (`0 6px 18px rgba(17, 19, 24, 0.08)`): raised cards.
@@ -140,25 +156,25 @@ Flat-by-default surfaces with light elevation on interactive cards. Shadows are 
 
 ## Shapes
 
-Rounded corners are consistent and mild. Cards use `0.5rem`, buttons use `0.75rem`, and focus rings use `0.35rem`. Borders are thin and low-contrast.
+Rounded corners are consistent and mild. Cards use `0.35rem`, buttons use `0.5rem`, and focus rings use `0.2rem`. Borders are thin and low-contrast.
 
 ## Components
 
 ### Buttons
-- **Shape:** rounded `0.75rem`
-- **Primary:** teal background, white text, medium padding.
-- **Secondary:** transparent with white border on light backgrounds; use only where contrast supports readability.
+- **Shape:** rounded `0.5rem`
+- **Primary:** teal background, white text, compact padding.
+- **Secondary:** transparent with ink border; use where contrast supports readability.
 - **Hover / Focus:** color shift on primary; visible focus ring on all actions.
 
 ### Cards / Containers
-- **Corner Style:** `0.5rem`
+- **Corner Style:** `0.35rem`
 - **Background:** surface or raised surface
 - **Shadow Strategy:** flat by default; raised shadow on hover/focus for interactive cards
 - **Border:** `1px solid` border color
-- **Internal Padding:** `1rem`
+- **Internal Padding:** `1.25rem`
 
 ### Navigation
-- **Style:** minimal top nav with brand wordmark and three links
+- **Style:** minimal top nav with brand wordmark and links
 - **Default:** muted ink links
 - **Active:** navy color with underline and stronger weight
 - **Focus:** visible outline ring for keyboard users
@@ -175,6 +191,6 @@ Rounded corners are consistent and mild. Cards use `0.5rem`, buttons use `0.75re
 - **Do** use restrained accent color only at action points.
 
 ### Don't:
-- **Don't** add decorative gradients or heavy imagery unless they reinforce the notebook metaphor.
+- **Don't** add decorative gradients or heavy imagery unless they reinforce the clean studio metaphor.
 - **Don't** introduce new accent colors without mapping them to a token.
 - **Don't** weaken typographic hierarchy by equalizing card weights.

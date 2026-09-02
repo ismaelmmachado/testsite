@@ -41,7 +41,7 @@ const schema = {
     <header class="site-header">
       <div class="container header-inner">
         <a href="/" class="brand">testsite</a>
-        <nav>
+        <nav aria-label="Primary">
           <a href="/" class="nav-link" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
           <a href="/guide/" class="nav-link" aria-current={Astro.url.pathname === '/guide/' ? 'page' : undefined}>Guide</a>
           <a href="/about/" class="nav-link" aria-current={Astro.url.pathname === '/about/' ? 'page' : undefined}>About</a>
