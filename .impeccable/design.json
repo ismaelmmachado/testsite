@@ -1,115 +1,40 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-02T11:40:00Z",
+  "generatedAt": "2026-09-02T14:25:00Z",
   "title": "Design System: testsite",
   "extensions": {
     "colorMeta": {
-      "ink": {
-        "role": "neutral",
-        "displayName": "Ink",
-        "canonical": "#111318"
-      },
-      "ink-muted": {
-        "role": "neutral",
-        "displayName": "Muted Ink",
-        "canonical": "#5b5f6b"
-      },
-      "surface": {
-        "role": "neutral",
-        "displayName": "Surface",
-        "canonical": "#ffffff"
-      },
-      "surface-raised": {
-        "role": "neutral",
-        "displayName": "Raised Surface",
-        "canonical": "#f8f8fa"
-      },
-      "border": {
-        "role": "neutral",
-        "displayName": "Border",
-        "canonical": "#e4e4e7"
-      },
-      "accent": {
-        "role": "accent",
-        "displayName": "Teal Action",
-        "canonical": "#0d7d71"
-      },
-      "navy": {
-        "role": "structural",
-        "displayName": "Navy Structure",
-        "canonical": "#0f172a"
-      },
-      "teal": {
-        "role": "primary",
-        "displayName": "Teal Action",
-        "canonical": "#0d7d71"
-      },
-      "warm": {
-        "role": "neutral",
-        "displayName": "Warm Paper",
-        "canonical": "#f4efe6"
-      },
-      "rose": {
-        "role": "neutral",
-        "displayName": "Rose",
-        "canonical": "#c87b7b"
-      },
-      "focus-ring": {
-        "role": "accent",
-        "displayName": "Focus Ring",
-        "canonical": "#2563eb"
-      }
+      "petroleo": { "role": "primary", "displayName": "Petroleo", "canonical": "#005f6b" },
+      "petroleo-deep": { "role": "primary", "displayName": "Petroleo Deep", "canonical": "#00434d" },
+      "sage": { "role": "neutral", "displayName": "Sage", "canonical": "#94a69a" },
+      "sage-lighter": { "role": "neutral", "displayName": "Sage Lighter", "canonical": "#c6d6cc" },
+      "sage-claro": { "role": "neutral", "displayName": "Sage Claro", "canonical": "#e9ede9" },
+      "off-black": { "role": "structural", "displayName": "Off Black", "canonical": "#1f2421" },
+      "muted-nova": { "role": "neutral", "displayName": "Muted Nova", "canonical": "#5b6b63" },
+      "border-nova": { "role": "neutral", "displayName": "Border Nova", "canonical": "#d7ded9" },
+      "safira": { "role": "accent", "displayName": "Safira", "canonical": "#2f5f92" },
+      "esmeralda": { "role": "accent", "displayName": "Esmeralda", "canonical": "#3f6f5a" },
+      "ambar": { "role": "accent", "displayName": "Ambar", "canonical": "#d99b2b" },
+      "rubi": { "role": "accent", "displayName": "Rubi", "canonical": "#b3493a" },
+      "surface": { "role": "neutral", "displayName": "Surface", "canonical": "#ffffff" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1f2421" },
+      "muted": { "role": "neutral", "displayName": "Muted", "canonical": "#5b6b63" },
+      "border": { "role": "neutral", "displayName": "Border", "canonical": "#d7ded9" }
     },
     "typographyMeta": {
-      "heading": {
-        "displayName": "Heading",
-        "purpose": "Hero and page titles."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Paragraphs and long-form reading."
-      },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Nav, metadata, and captions."
-      },
-      "title": {
-        "displayName": "Title",
-        "purpose": "Card titles and section headers."
-      },
-      "caption": {
-        "displayName": "Caption",
-        "purpose": "Small-screen headline fallback."
-      },
-      "mono": {
-        "displayName": "Mono",
-        "purpose": "Inline code and technical text."
-      }
+      "heading": { "displayName": "Heading", "purpose": "Hero and page titles." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs and long-form reading." },
+      "label": { "displayName": "Label", "purpose": "Eyebrow text, nav labels, small captions." }
     },
     "shadows": [
-      {
-        "name": "card-shadow",
-        "value": "0 6px 18px rgba(17, 19, 24, 0.08)",
-        "purpose": "Raised cards."
-      },
-      {
-        "name": "elevated-shadow",
-        "value": "0 12px 28px rgba(17, 19, 24, 0.12)",
-        "purpose": "Hero media and high-emphasis surfaces."
-      }
+      { "name": "card-shadow", "value": "0 4px 14px rgba(0, 67, 77, 0.06)", "purpose": "Default cards." },
+      { "name": "elevated-shadow", "value": "0 12px 30px rgba(0, 67, 77, 0.12)", "purpose": "Dropdowns and raised surfaces." }
     ],
     "motion": [
-      {
-        "name": "ease-standard",
-        "value": "180ms ease",
-        "purpose": "Default card and button state transitions."
-      }
+      { "name": "ease-standard", "value": "180ms ease", "purpose": "Default transitions." }
     ],
     "breakpoints": [
-      {
-        "name": "md",
-        "value": "768px"
-      }
+      { "name": "mobile", "value": "760px" }
     ]
   },
   "components": [
@@ -117,79 +42,67 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Primary CTA button using teal action color.",
-      "html": "<a class=\"ds-btn-primary\" href=\"#\">Start with the guide</a>",
-      "css": ".ds-btn-primary { background: #0d7d71; color: #fff; padding: 0.8rem 1.5rem; border-radius: 0.5rem; font-weight: 600; text-decoration: none; transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease; } .ds-btn-primary:hover { background: #07635b; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(13,125,113,0.22); } .ds-btn-primary:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.2rem; }"
+      "description": "Primary CTA button using petroleo action color.",
+      "html": "<a class=\"btn btn-primary\" href=\"#\">Venha nos visitar este domingo</a>",
+      "css": ".btn-primary { background: #005f6b; color: #fff; padding: 13px 26px; border-radius: 8px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(0,95,107,0.22); transition: transform 0.15s ease, box-shadow 0.15s ease; } .btn-primary:hover { box-shadow: 0 12px 26px rgba(0,95,107,0.30); transform: translateY(-1px); } .btn-primary:focus-visible { outline: 3px solid #005f6b; outline-offset: 2px; border-radius: 8px; }"
     },
     {
-      "name": "Secondary Button",
+      "name": "Outline Dark Button",
       "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Secondary action button with transparent background.",
-      "html": "<a class=\"ds-btn-secondary\" href=\"#\">About this project</a>",
-      "css": ".ds-btn-secondary { background: transparent; color: #111318; border: 1.5px solid #e4e4e7; padding: 0.8rem 1.5rem; border-radius: 0.5rem; font-weight: 600; text-decoration: none; transition: border-color 180ms ease, color 180ms ease; } .ds-btn-secondary:hover { border-color: #0f172a; color: #0f172a; } .ds-btn-secondary:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.2rem; }"
+      "refersTo": "button-outline-dark",
+      "description": "Secondary outline button on light backgrounds.",
+      "html": "<a class=\"btn btn-outline-dark\" href=\"#\">Conheça o nosso jeito de viver</a>",
+      "css": ".btn-outline-dark { background: transparent; border: 1.5px solid #1f2421; color: #1f2421; padding: 13px 26px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: background 0.15s ease, color 0.15s ease; } .btn-outline-dark:hover { background: #1f2421; color: #fff; } .btn-outline-dark:focus-visible { outline: 3px solid #005f6b; outline-offset: 2px; border-radius: 8px; }"
     },
     {
       "name": "Card",
       "kind": "card",
       "refersTo": "card",
-      "description": "Standard content card with optional raised state.",
-      "html": "<article class=\"ds-card ds-card-raised ds-card-interactive\"><p class=\"ds-card-title\">Step 1</p><p class=\"ds-card-body\">Write the smallest version of what you want to learn or build.</p></article>",
-      "css": ".ds-card { border: 1px solid #e4e4e7; border-radius: 0.35rem; padding: 1.25rem; background: #ffffff; } .ds-card-raised { background: #f8f8fa; } .ds-card-interactive { cursor: pointer; transition: border-color 180ms ease, box-shadow 180ms ease; } .ds-card-interactive:hover { border-color: #0d7d71; box-shadow: 0 6px 18px rgba(17,19,24,0.08); } .ds-card-title { font-family: Merriweather, Georgia, serif; font-weight: 700; font-size: 1.05rem; line-height: 1.25; color: #0f172a; margin-bottom: 0.5rem; } .ds-card-body { color: #5b5f6b; margin-top: 0.35rem; } .ds-card-interactive:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.2rem; }"
+      "description": "Standard content card with subtle shadow and border.",
+      "html": "<article class=\"card\"><h3>Nosso Jeito de Viver</h3><p>...</p></article>",
+      "css": ".ds-card { background: #ffffff; border: 1px solid #d7ded9; border-radius: 8px; padding: 1.6rem; box-shadow: 0 4px 14px rgba(0,67,77,0.06); transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,67,77,0.10); } .ds-card h3 { margin-bottom: 0.5rem; } .ds-card p { color: #5b6b63; } .ds-card:focus-visible { outline: 3px solid #005f6b; outline-offset: 2px; border-radius: 8px; }"
+    },
+    {
+      "name": "Dark Card",
+      "kind": "card",
+      "refersTo": "card-dark",
+      "description": "Gradient dark card for emphasis blocks.",
+      "html": "<article class=\"card card-dark\"><h3>...</h3><p>...</p></article>",
+      "css": ".ds-card-dark { background: linear-gradient(160deg, #00434d, #005f6b); color: #fff; border: 1px solid rgba(255,255,255,0.25); border-radius: 8px; padding: 1.6rem; } .ds-card-dark h3 { color: #fff; } .ds-card-dark p { color: rgba(255,255,255,0.92); }"
     },
     {
       "name": "Navigation",
       "kind": "nav",
       "refersTo": "nav",
-      "description": "Minimal top navigation with brand and active state.",
-      "html": "<nav aria-label=\"Primary\"><a class=\"ds-nav-link\" aria-current=\"page\" href=\"/\">Home</a><a class=\"ds-nav-link\" href=\"/guide/\">Guide</a></nav>",
-      "css": ".ds-nav-link { margin-left: 1.25rem; font-size: 0.88rem; color: #5b5f6b; text-decoration: none; } .ds-nav-link:hover { color: #111318; } .ds-nav-link[aria-current='page'] { color: #0f172a; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; } .ds-nav-link:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.2rem; }"
-    },
-    {
-      "name": "Callout",
-      "kind": "custom",
-      "refersTo": "callout",
-      "description": "Light callout block for secondary CTAs.",
-      "html": "<aside class=\"ds-callout\"><p class=\"ds-callout-lead\">Start with the guide if you want one concrete workflow.</p><p class=\"ds-section-cta\"><a class=\"ds-link-underline\" href=\"/guide/\">Open the guide -></a></p></aside>",
-      "css": ".ds-callout { padding: 0.75rem 1rem; background: #f8f8fa; border-radius: 0.35rem; } .ds-callout-lead { color: #111318; margin: 0; } .ds-section-cta { margin-top: 0.6rem; } .ds-link-underline { font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }"
+      "description": "Sticky header with translucent background and mobile toggle.",
+      "html": "<header class=\"site-header\"><div class=\"container header-inner\"><a class=\"brand\" href=\"/\">testsite</a><button class=\"nav-toggle\" aria-expanded=\"false\" aria-controls=\"nav-menu\">Menu</button><ul id=\"nav-menu\" class=\"nav-menu\"><li><a href=\"/\" aria-current=\"page\">Home</a></li></ul></div></header>",
+      "css": ".ds-site-header { position: sticky; top: 0; z-index: 60; border-bottom: 1px solid #d7ded9; backdrop-filter: saturate(140%) blur(10px); background: rgba(255,255,255,0.9); } .ds-header-inner { display: flex; align-items: center; justify-content: space-between; gap: clamp(1.1rem,3vw,2.2rem); height: 72px; } .ds-nav-link { padding: 8px 12px; color: #1f2421; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-radius: 8px; } .ds-nav-link:hover, .ds-nav-link[aria-current='page'] { background: rgba(0,95,107,0.08); color: #005f6b; }"
     }
   ],
   "narrative": {
-    "northStar": "The Clean Studio",
-    "overview": "testsite is a clean studio for practical AI workflow tutorials. Its design system prioritizes readability, reuse, and restraint over decorative visuals.",
+    "northStar": "The Vitral Studio",
+    "overview": "testsite uses a clean studio identity built from petroleo green, sage neutrals, thin structure, and Montserrat typography. It reads as calm, modern, and grounded.",
     "keyCharacteristics": [
-      "Token-first styling with minimal inline exceptions",
-      "Editorial typography using Merriweather and Inter",
-      "Restrained teal accent with neutral surfaces",
-      "Clear card hierarchy and consistent spacing",
-      "Accessible focus and navigation states"
+      "Vitral-branded token set with petroleo and gem accents",
+      "Montserrat-based typographic hierarchy",
+      "Sticky translucent header and responsive mobile menu",
+      "Light card elevation with restrained borders",
+      "Portable theme package under design-kit"
     ],
     "rules": [
-      {
-        "name": "The Restraint Rule",
-        "body": "Accent color appears on meaningful actions only; avoid decorative saturation.",
-        "section": "colors"
-      },
-      {
-        "name": "The One Type Rule",
-        "body": "One heading role per section; avoid stacking multiple heading weights in the same card.",
-        "section": "typography"
-      },
-      {
-        "name": "The Flat Rest Rule",
-        "body": "Surfaces are flat at rest; elevation appears only for cards in raised states or hover/focus emphasis.",
-        "section": "elevation"
-      }
+      { "name": "The Restraint Rule", "body": "Primary color is used for actions and structure; avoid decorative saturation.", "section": "colors" },
+      { "name": "The One Stack Rule", "body": "Use Montserrat everywhere; do not introduce additional display fonts without a brand reason.", "section": "typography" },
+      { "name": "The Flat Rest Rule", "body": "Cards are flat at rest; lift appears only on hover/focus.", "section": "elevation" }
     ],
     "dos": [
-      "Do keep inline styles out of page markup; prefer shared utilities and tokens.",
-      "Do preserve visible focus states for nav, buttons, and cards.",
-      "Do use restrained accent color only at action points."
+      "Do reuse the four-gem strip as a signature accent only.",
+      "Do keep mobile nav behavior and accessibility states intact.",
+      "Do preserve the petroleo/sage/claro alternation rhythm."
     ],
     "donts": [
-      "Don't add decorative gradients or heavy imagery unless they reinforce the clean studio metaphor.",
-      "Don't introduce new accent colors without mapping them to a token.",
-      "Don't weaken typographic hierarchy by equalizing card weights."
+      "Don't add decorative gradients beyond the defined banner gradient and gem strip.",
+      "Don't introduce brand colors outside the token set.",
+      "Don't stack multiple heading treatments in one card."
     ]
   }
 }
