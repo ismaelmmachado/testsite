@@ -142,9 +142,19 @@ h4 {
   background: var(--color-surface-raised);
 }
 
+.card-interactive {
+  cursor: pointer;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
 .card-interactive:hover {
   border-color: var(--color-teal);
   box-shadow: var(--shadow-card);
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
 }
 
 .grid-3 {
@@ -216,7 +226,11 @@ h4 {
 
 .skip-link {
   position: absolute;
-  transform: translate(-9999px);
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .skip-link:focus {
@@ -229,6 +243,8 @@ h4 {
   border-radius: 0.25rem;
   transform: translate(0);
   z-index: 100;
+  width: auto;
+  height: auto;
 }
 
 .card-title {
@@ -326,6 +342,12 @@ h4 {
 
 .nav-link:hover {
   color: var(--color-ink);
+}
+
+.link-underline {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .site-footer {
