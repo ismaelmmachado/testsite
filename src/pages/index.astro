@@ -19,8 +19,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </div>
       <div class="hero-media">
-        <div class="hero-image">
-          <img src="/hero-placeholder.svg" alt="Editorial hero illustration" width="640" height="420" loading="eager" />
+        <div class="hero-media-empty" role="img" aria-label="Editorial hero illustration">
+          <img src="/hero-placeholder.svg" alt="" width="640" height="420" loading="eager" />
         </div>
       </div>
     </div>
@@ -30,20 +30,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <h2>How I work</h2>
     <div class="grid-2">
       <div class="card card-raised card-interactive">
-        <p style="font-weight:700">Stop browsing</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.35rem">First pass: search terms, site: filters, saved tab groups. After 20 minutes, stop even if nothing feels "enough."</p>
+        <p class="card-title">Stop browsing</p>
+        <p class="card-body">First pass: search terms, site: filters, saved tab groups. After 20 minutes, stop even if nothing feels "enough."</p>
       </div>
       <div class="card card-raised card-interactive">
-        <p style="font-weight:700">Open three sources</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.35rem">One overview, one practitioner explainer, one primary source or official guidance. That is usually enough.</p>
+        <p class="card-title">Open three sources</p>
+        <p class="card-body">One overview, one practitioner explainer, one primary source or official guidance. That is usually enough.</p>
       </div>
       <div class="card card-raised card-interactive">
-        <p style="font-weight:700">Write it in your words</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.35rem">One paragraph. One step you would actually do. If you cannot explain the action, you do not have a how-to yet.</p>
+        <p class="card-title">Write it in your words</p>
+        <p class="card-body">One paragraph. One step you would actually do. If you cannot explain the action, you do not have a how-to yet.</p>
       </div>
       <div class="card card-raised card-interactive">
-        <p style="font-weight:700">Check before saving</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.35rem">One fact check, one source link, one date. If it feels urgent, slow down; urgency is usually noise.</p>
+        <p class="card-title">Check before saving</p>
+        <p class="card-body">One fact check, one source link, one date. If it feels urgent, slow down; urgency is usually noise.</p>
       </div>
     </div>
   </section>
@@ -55,29 +55,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="card-image">
           <img src="/note-placeholder-1.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
         </div>
-        <p style="font-weight:600;color:var(--color-ink)">A fast checklist for noisy mornings</p>
-        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.35rem">Updated recently</span>
+        <p class="card-title">A fast checklist for noisy mornings</p>
+        <span class="card-meta">Start with a 5-minute routine</span>
       </a>
       <a href="/guide/" class="card card-interactive" style="display:block;text-decoration:none">
         <div class="card-image">
           <img src="/note-placeholder-2.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
         </div>
-        <p style="font-weight:600;color:var(--color-ink)">How I stopped repeating searches for the same topic</p>
-        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.35rem">Updated recently</span>
+        <p class="card-title">How I stopped repeating searches for the same topic</p>
+        <span class="card-meta">Save one phrase, one source, one step</span>
       </a>
       <a href="/guide/" class="card card-interactive" style="display:block;text-decoration:none">
         <div class="card-image">
           <img src="/note-placeholder-3.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
         </div>
-        <p style="font-weight:600;color:var(--color-ink)">Writing notes you will actually reread</p>
-        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.35rem">Updated recently</span>
+        <p class="card-title">Writing notes you will actually reread</p>
+        <span class="card-meta">One title, one example, one check</span>
       </a>
     </div>
   </section>
 
   <section class="section callout">
-    <p style="color:var(--color-ink);margin:0">Start with the guide if you want one concrete workflow instead of philosophy.</p>
-    <p style="margin-top:0.6rem">
+    <p class="card-body" style="color:var(--color-ink);margin:0">Start with the guide if you want one concrete workflow instead of philosophy.</p>
+    <p class="section-cta">
       <a href="/guide/" style="font-weight:700;text-decoration:underline;text-underline-offset:2px">Open the guide -></a>
     </p>
   </section>
