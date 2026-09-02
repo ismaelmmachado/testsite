@@ -121,16 +121,17 @@ Color is intentional and restrained. Neutrals carry most surfaces; petroleo gree
 **Body Font:** Montserrat, system-ui, -apple-system, Segoe UI, Roboto, sans-serif
 **Label Font:** Montserrat, system-ui, -apple-system, Segoe UI, Roboto, sans-serif
 
-**Character:** A modern, clean sans pairing with strong weight contrast and tight line rhythm.
+**Character:** A modern, clean sans pairing with strong weight contrast and tight line rhythm. Montserrat is an intentional brand choice, not a default.
 
 ### Hierarchy
 - **Heading** (`700`, `clamp(2rem, 4.6vw, 3.4rem)`): hero and page titles.
-- **Title** (`700`, `clamp(1.15rem, 2vw, 1.4rem)`): card and section titles.
+- **Title** (`700`, `1.05rem`, `clamp(1.15rem, 2vw, 1.4rem)`): card and section titles.
 - **Body** (`400`, `clamp(1rem, 1.4vw, 1.125rem)`): paragraphs.
 - **Label** (`700`, `0.72rem`): small labels and eyebrow text.
+- **Nav/Link** (`600`, `0.95rem`): navigation links.
 
 ### Named Rules
-**The One Stack Rule.** Use Montserrat everywhere; do not introduce additional display fonts without a brand reason.
+**The One Stack Rule.** Montserrat is the brand face; do not introduce additional display fonts without a brand reason. If another face is added, document it here first.
 
 ## Layout
 

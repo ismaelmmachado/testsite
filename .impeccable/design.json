@@ -4,38 +4,167 @@
   "title": "Design System: testsite",
   "extensions": {
     "colorMeta": {
-      "petroleo": { "role": "primary", "displayName": "Petroleo", "canonical": "#005f6b" },
-      "petroleo-deep": { "role": "primary", "displayName": "Petroleo Deep", "canonical": "#00434d" },
-      "sage": { "role": "neutral", "displayName": "Sage", "canonical": "#94a69a" },
-      "sage-lighter": { "role": "neutral", "displayName": "Sage Lighter", "canonical": "#c6d6cc" },
-      "sage-claro": { "role": "neutral", "displayName": "Sage Claro", "canonical": "#e9ede9" },
-      "off-black": { "role": "structural", "displayName": "Off Black", "canonical": "#1f2421" },
-      "muted-nova": { "role": "neutral", "displayName": "Muted Nova", "canonical": "#5b6b63" },
-      "border-nova": { "role": "neutral", "displayName": "Border Nova", "canonical": "#d7ded9" },
-      "safira": { "role": "accent", "displayName": "Safira", "canonical": "#2f5f92" },
-      "esmeralda": { "role": "accent", "displayName": "Esmeralda", "canonical": "#3f6f5a" },
-      "ambar": { "role": "accent", "displayName": "Ambar", "canonical": "#d99b2b" },
-      "rubi": { "role": "accent", "displayName": "Rubi", "canonical": "#b3493a" },
-      "surface": { "role": "neutral", "displayName": "Surface", "canonical": "#ffffff" },
-      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1f2421" },
-      "muted": { "role": "neutral", "displayName": "Muted", "canonical": "#5b6b63" },
-      "border": { "role": "neutral", "displayName": "Border", "canonical": "#d7ded9" }
+      "petroleo": {
+        "role": "primary",
+        "displayName": "Petroleo",
+        "canonical": "#005f6b"
+      },
+      "petroleo-deep": {
+        "role": "primary",
+        "displayName": "Petroleo Deep",
+        "canonical": "#00434d"
+      },
+      "sage": {
+        "role": "neutral",
+        "displayName": "Sage",
+        "canonical": "#94a69a"
+      },
+      "sage-lighter": {
+        "role": "neutral",
+        "displayName": "Sage Lighter",
+        "canonical": "#c6d6cc"
+      },
+      "sage-claro": {
+        "role": "neutral",
+        "displayName": "Sage Claro",
+        "canonical": "#e9ede9"
+      },
+      "off-black": {
+        "role": "structural",
+        "displayName": "Off Black",
+        "canonical": "#1f2421"
+      },
+      "muted-nova": {
+        "role": "neutral",
+        "displayName": "Muted Nova",
+        "canonical": "#5b6b63"
+      },
+      "border-nova": {
+        "role": "neutral",
+        "displayName": "Border Nova",
+        "canonical": "#d7ded9"
+      },
+      "safira": {
+        "role": "accent",
+        "displayName": "Safira",
+        "canonical": "#2f5f92"
+      },
+      "esmeralda": {
+        "role": "accent",
+        "displayName": "Esmeralda",
+        "canonical": "#3f6f5a"
+      },
+      "ambar": {
+        "role": "accent",
+        "displayName": "Ambar",
+        "canonical": "#d99b2b"
+      },
+      "rubi": {
+        "role": "accent",
+        "displayName": "Rubi",
+        "canonical": "#b3493a"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#ffffff"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1f2421"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "canonical": "#5b6b63"
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "canonical": "#d7ded9"
+      }
     },
     "typographyMeta": {
-      "heading": { "displayName": "Heading", "purpose": "Hero and page titles." },
-      "body": { "displayName": "Body", "purpose": "Paragraphs and long-form reading." },
-      "label": { "displayName": "Label", "purpose": "Eyebrow text, nav labels, small captions." }
+      "heading": {
+        "displayName": "Heading",
+        "purpose": "Hero and page titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card and section titles."
+      },
+      "title-mid": {
+        "displayName": "Title Mid",
+        "purpose": "Brand and section title at 1.05rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs and long-form reading."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Eyebrow text, small captions."
+      },
+      "nav-link": {
+        "displayName": "Nav/Link",
+        "purpose": "Navigation links."
+      },
+      "chalk": {
+        "displayName": "Chalk",
+        "purpose": "Information pill / chalk line."
+      },
+      "big-quote": {
+        "displayName": "Big Quote",
+        "purpose": "Large pullquote."
+      },
+      "section-lead": {
+        "displayName": "Section Lead",
+        "purpose": "Section lead text."
+      }
     },
     "shadows": [
-      { "name": "card-shadow", "value": "0 4px 14px rgba(0, 67, 77, 0.06)", "purpose": "Default cards." },
-      { "name": "elevated-shadow", "value": "0 12px 30px rgba(0, 67, 77, 0.12)", "purpose": "Dropdowns and raised surfaces." }
+      {
+        "name": "card-shadow",
+        "value": "0 4px 14px rgba(0, 67, 77, 0.06)",
+        "purpose": "Default cards."
+      },
+      {
+        "name": "elevated-shadow",
+        "value": "0 12px 30px rgba(0, 67, 77, 0.12)",
+        "purpose": "Dropdowns and raised surfaces."
+      }
     ],
     "motion": [
-      { "name": "ease-standard", "value": "180ms ease", "purpose": "Default transitions." }
+      {
+        "name": "ease-standard",
+        "value": "180ms ease",
+        "purpose": "Default transitions."
+      }
     ],
     "breakpoints": [
-      { "name": "mobile", "value": "760px" }
-    ]
+      {
+        "name": "mobile",
+        "value": "760px"
+      }
+    ],
+    "radiusMeta": {
+      "card": {
+        "displayName": "Card Radius",
+        "canonical": "8px",
+        "purpose": "Cards, buttons, inputs."
+      },
+      "pill": {
+        "displayName": "Pill Radius",
+        "canonical": "999px",
+        "purpose": "Eyebrow/chalk pills. Exception to 8px grid."
+      },
+      "skip-focus": {
+        "displayName": "Skip Focus Radius",
+        "canonical": "10px",
+        "purpose": "Skip-link focus treatment. Exception to 8px grid."
+      }
+    }
   },
   "components": [
     {
@@ -51,7 +180,7 @@
       "kind": "button",
       "refersTo": "button-outline-dark",
       "description": "Secondary outline button on light backgrounds.",
-      "html": "<a class=\"btn btn-outline-dark\" href=\"#\">Conheça o nosso jeito de viver</a>",
+      "html": "<a class=\"btn btn-outline-dark\" href=\"#\">Conhe\u00e7a o nosso jeito de viver</a>",
       "css": ".btn-outline-dark { background: transparent; border: 1.5px solid #1f2421; color: #1f2421; padding: 13px 26px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: background 0.15s ease, color 0.15s ease; } .btn-outline-dark:hover { background: #1f2421; color: #fff; } .btn-outline-dark:focus-visible { outline: 3px solid #005f6b; outline-offset: 2px; border-radius: 8px; }"
     },
     {
@@ -84,15 +213,32 @@
     "overview": "testsite uses a clean studio identity built from petroleo green, sage neutrals, thin structure, and Montserrat typography. It reads as calm, modern, and grounded.",
     "keyCharacteristics": [
       "Vitral-branded token set with petroleo and gem accents",
-      "Montserrat-based typographic hierarchy",
+      "Montserrat as intentional brand face",
       "Sticky translucent header and responsive mobile menu",
       "Light card elevation with restrained borders",
       "Portable theme package under design-kit"
     ],
     "rules": [
-      { "name": "The Restraint Rule", "body": "Primary color is used for actions and structure; avoid decorative saturation.", "section": "colors" },
-      { "name": "The One Stack Rule", "body": "Use Montserrat everywhere; do not introduce additional display fonts without a brand reason.", "section": "typography" },
-      { "name": "The Flat Rest Rule", "body": "Cards are flat at rest; lift appears only on hover/focus.", "section": "elevation" }
+      {
+        "name": "The Restraint Rule",
+        "body": "Primary color is used for actions and structure; avoid decorative saturation.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Stack Rule",
+        "body": "Montserrat is the brand face; do not introduce additional display fonts without a brand reason.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Rest Rule",
+        "body": "Cards are flat at rest; lift appears only on hover/focus.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Gem Strip Rule",
+        "body": "Use the four-gem strip only in the footer top rule and as a controlled signature accent.",
+        "section": "colors"
+      }
     ],
     "dos": [
       "Do reuse the four-gem strip as a signature accent only.",
