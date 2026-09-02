@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1f2c"/>
+      <stop offset="1" stop-color="#16324e"/>
+    </linearGradient>
+    <linearGradient id="v" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f5f92"/>
+      <stop offset=".5" stop-color="#d99b2b"/>
+      <stop offset="1" stop-color="#b3493a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <path d="M600 90 C 470 90 380 200 380 330 L380 560 L820 560 L820 330 C820 200 730 90 600 90 Z" fill="url(#v)"/>
+  <path d="M600 90 L530 230 L600 350 L670 230 Z" fill="#d99b2b"/>
+  <path d="M600 90 L530 230 L380 330 L380 560 L600 560 Z" fill="#2f5f92" opacity=".9"/>
+  <path d="M600 90 L670 230 L820 330 L820 560 L600 560 Z" fill="#3f6f5a" opacity=".9"/>
+  <path d="M530 230 L600 350 L600 560 L380 560 L380 330 Z" fill="#b3493a" opacity=".85"/>
+  <path d="M670 230 L820 330 L820 560 L600 560 L600 350 Z" fill="#d99b2b" opacity=".9"/>
+  <g fill="none" stroke="#f7f6f2" stroke-width="6" stroke-linejoin="round">
+    <path d="M600 90 L530 230 L600 350 L670 230 Z"/>
+    <path d="M600 90 L530 230 L380 330"/>
+    <path d="M600 90 L670 230 L820 330"/>
+    <path d="M530 230 L600 350 L670 230"/>
+    <path d="M380 330 L380 560 L600 560"/>
+    <path d="M820 330 L820 560 L600 560"/>
+    <path d="M600 350 L600 560"/>
+  </g>
+  <text x="600" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#fff" letter-spacing="1">Comunidade Vitral</text>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="rgba(255,255,255,0.92)">Igreja em pessoas · venha como você está</text>
+</svg>

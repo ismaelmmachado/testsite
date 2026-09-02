@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="arco" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f5f92"/>
+      <stop offset=".5" stop-color="#d99b2b"/>
+      <stop offset="1" stop-color="#b3493a"/>
+    </linearGradient>
+  </defs>
+  <path d="M90 6 C 38 6 6 52 6 106 L 6 214 L 174 214 L 174 106 C 174 52 142 6 90 6 Z" fill="url(#arco)" opacity=".95"/>
+  <path d="M90 6 L 42 72 L 90 132 L 138 72 Z" fill="#d99b2b"/>
+  <path d="M90 6 L 42 72 L 6 106 L 6 214 L 90 214 L 90 132 Z" fill="#2f5f92" opacity=".92"/>
+  <path d="M90 6 L 138 72 L 174 106 L 174 214 L 90 214 L 90 132 Z" fill="#3f6f5a" opacity=".92"/>
+  <path d="M42 72 L 90 132 L 90 214 L 6 214 L 6 106 Z" fill="#b3493a" opacity=".85"/>
+  <path d="M138 72 L 174 106 L 174 214 L 90 214 L 90 132 Z" fill="#d99b2b" opacity=".9"/>
+  <path d="M42 72 L 90 132 L 72 214 L 6 214 L 6 106 Z" fill="#3f6f5a" opacity=".8"/>
+  <path d="M138 72 L 174 106 L 174 214 L 108 214 L 90 132 Z" fill="#2f5f92" opacity=".8"/>
+  <circle cx="90" cy="172" r="22" fill="#d99b2b" opacity=".95"/>
+  <circle cx="90" cy="172" r="9" fill="#b3493a"/>
+  <g fill="none" stroke="#f7f6f2" stroke-width="4" stroke-linejoin="round">
+    <path d="M90 6 L 42 72 L 90 132 L 138 72 Z"/>
+    <path d="M90 6 L 42 72 L 6 106"/>
+    <path d="M90 6 L 138 72 L 174 106"/>
+    <path d="M42 72 L 90 132 L 138 72"/>
+    <path d="M6 106 L 6 214"/>
+    <path d="M174 106 L 174 214"/>
+    <path d="M90 132 L 90 214"/>
+    <circle cx="90" cy="172" r="22"/>
+    <circle cx="90" cy="172" r="9"/>
+  </g>
+</svg>

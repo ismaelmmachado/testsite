@@ -1,0 +1,95 @@
+---
+import '../styles/vitral/tokens.css';
+import '../styles/vitral/base.css';
+import '../styles/vitral/estilo.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const { title, description = '', bodyClass = '' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} — testsite</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${title} — testsite`} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <slot name="head" />
+  </head>
+
+  <body class={bodyClass}>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">
+          <img src="/assets/logos/logo-vitral-header.png" alt="testsite" />
+          <span>testsite</span>
+        </a>
+        <nav class="nav" aria-label="Menu principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a></li>
+            <li><a href="/guide/">Guide</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>testsite</h3>
+            <p>Uma igreja simples, missional e acolhedora. Igreja em pessoas — venha como você está.</p>
+            <div class="social-row">
+              <a href="https://www.instagram.com/comunidadevitral/" target="_blank" rel="noopener"><img src="/assets/logos/icone-instagram.png" alt="Instagram"></a>
+              <a href="https://www.youtube.com/c/ComunidadeVitral" target="_blank" rel="noopener"><img src="/assets/logos/icone-youtube.png" alt="YouTube"></a>
+              <a href="https://www.facebook.com/comunidadevitral" target="_blank" rel="noopener"><img src="/assets/logos/icone-facebook-branco.png" alt="Facebook"></a>
+              <a href="https://open.spotify.com/show/1prjsrcxPho9otrP1VUWT4" target="_blank" rel="noopener"><img src="/assets/logos/icone-spotify.png" alt="Spotify"></a>
+            </div>
+          </div>
+          <div>
+            <h3>Contato</h3>
+            <ul>
+              <li><a href="tel:+5517996195302">17 99619-5302</a></li>
+              <li><a href="mailto:contato@comunidadevitral.com.br">contato@comunidadevitral.com.br</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Onde estamos</h3>
+            <p>Avenida Sebastião Tavares da Silva, 1191<br>Jardim Vista Alegre, São José do Rio Preto - SP<br>CEP 15061660</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> testsite</span>
+          <div class="footer-logos">
+            <img src="/assets/logos/logo-ipi-comunidade-vitral.png" alt="testsite">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/menu.js" is:inline></script>
+  </body>
+</html>

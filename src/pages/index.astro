@@ -1,168 +1,197 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import VitralLayout from '../layouts/VitralLayout.astro';
 ---
 
-<BaseLayout
-  title="Clear notes, not research loops"
-  description="A small personal system for learning, saving, and acting without getting lost in research loops."
+<VitralLayout
+  title="Comunidade Vitral — Um lugar para pessoas cansadas de fingir"
+  description="Cansado de fingir? Puxe uma cadeira e respire fundo. Uma comunidade cristã simples, missional e acolhedora em São José do Rio Preto. Venha como você está."
+  bodyClass="home"
 >
-  <section class="section">
-    <div class="hero">
-      <div class="hero-copy">
-        <h1>Clear notes, not research loops.</h1>
-        <p>This site is a working notebook for a simple idea: if it is not practical, it is not finished yet.</p>
-        <p>I share short how-to notes with real steps, real caveats, and just enough background to avoid wasted searching later.</p>
-        <div class="hero-actions">
-          <a href="/guide/" class="btn-primary">Start with the guide</a>
-          <a href="/about/" class="btn-secondary">About this project</a>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="hero-eyebrow">Comunidade cristã · São José do Rio Preto</span>
+        <h1>Cansado de fingir? Puxe uma cadeira e respire fundo.</h1>
+        <p class="chalk-line">Domingos às 10h · café quentinho te espera.</p>
+        <p class="hero-sub">Em uma cidade que cobra performance o tempo todo e nos deixa profundamente sós, a Vitral é um lugar de alívio. Uma comunidade cristã simples, missional e acolhedora para você ser quem é, aprender no seu ritmo e encontrar um lugar à mesa.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/contato.html">Venha nos visitar este domingo</a>
+          <a class="btn btn-outline-dark" href="/quem-somos.html">Conheça o nosso jeito de viver</a>
         </div>
+        <p class="hero-meta"><a href="https://www.google.com/maps/search/?api=1&query=Avenida+Sebasti%C3%A3o+Tavares+da+Silva+1191+S%C3%A3o+Jos%C3%A9+do+Rio+Preto" target="_blank" rel="noopener">Av. Sebastião Tavares da Silva, 1191 — ver no mapa</a></p>
       </div>
-      <div class="hero-media">
-        <div class="hero-media-empty" role="img" aria-label="Editorial hero illustration">
-          <img src="/hero-placeholder.svg" alt="" width="640" height="420" loading="eager" />
+      <div class="hero-glass">
+        <img src="/assets/logos/logo-vitral.png" alt="Emblema IPI Comunidade Vitral" width="1376" height="768" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>A gente entende o peso que você carrega na cidade</h2>
+      <p class="section-lead">O calor de Rio Preto não é só no clima. É a temperatura da pressa, da exigência de parecer bem o tempo todo, da rotina exaustiva. A gente trabalha muito, cuida da aparência, mas por dentro, muitas vezes, sente um vazio e uma solidão profunda.</p>
+      <p>Você não precisa continuar fingindo que tem todas as respostas.</p>
+      <blockquote class="big-quote">"Existimos para que pessoas cansadas de fingir encontrem um lugar à mesa."</blockquote>
+      <p>Na Vitral, você não precisa se defender ou mascarar sua história. Suas marcas, suas dúvidas e suas dores são acolhidas com gentileza.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Venha exatamente como você está</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Nosso Jeito de Viver</h3>
+          <p><strong>Pessoas reais, fé translúcida.</strong></p>
+          <p>A gente não finge ser perfeito. Somos como cacos de vidro coloridos que Deus está unindo para formar algo lindo. Permitimos que a luz do amor de Deus passe pelas nossas imperfeições para alcançar outros. Igreja não é um prédio — somos uma comunidade em pessoas.</p>
+        </article>
+        <article class="card">
+          <h3>Nosso Jeito de Receber</h3>
+          <p><strong>Sem exigências ou máscaras.</strong></p>
+          <p>Não importa o que você veste, quanto ganha ou em quem votou. Não exigimos que você mude para ser aceito. Você pode fazer perguntas, buscar no seu tempo e caminhar sem cobranças.</p>
+        </article>
+        <article class="card">
+          <h3>Menos Programas, Mais Relacionamento</h3>
+          <p><strong>Pessoas no centro.</strong></p>
+          <p>A vida cristã não é uma agenda cheia de compromissos sufocantes. Valorizamos conversas sinceras ao redor da mesa, um café sem pressa e o cuidado mútuo na rotina da semana.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Sua primeira visita sem frio na barriga</h2>
+      <ul class="feature-list">
+        <li>
+          <span class="num">1</span>
+          <span><strong>O que vestir:</strong> venha com a roupa que te deixa confortável. Do jeans e camiseta ao que você preferir.</span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span><strong>Onde estacionar e como chegar:</strong> nosso espaço na Região Leste tem fácil acesso e recepção pronta para te acolher.</span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span><strong>Chegue para o café:</strong> sempre temos um café quentinho te esperando antes e depois do nosso Encontro.</span>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <span><strong>Suas crianças são bem-vindas:</strong> aqui, as crianças não são o "futuro da igreja" — elas são a igreja hoje. Elas participam, têm um espaço dedicado e aprendem sobre Jesus em uma linguagem que entendem.</span>
+        </li>
+        <li>
+          <span class="num">5</span>
+          <span><strong>Sem pressões:</strong> você não será forçado a se levantar, falar no microfone ou assinar nada. Sente-se, respire e aproveite o momento.</span>
+        </li>
+      </ul>
+      <div class="hero-cta" style="margin-top: 1.6rem;">
+        <a class="btn btn-primary" href="/contato.html">Quero visitar este domingo</a>
+        <a class="btn btn-outline-dark" href="https://wa.me/5517996195302" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Um caminho para caminhar no seu ritmo</h2>
+      <p class="section-lead">Seguir a Jesus é uma jornada bonita, simples e comunitária. Resumimos nosso caminho em três passos práticos: <strong>Esteja com Jesus, Torne-se como Ele e Faça como Ele fez.</strong></p>
+      <ol class="feature-list">
+        <li>
+          <span class="num">1</span>
+          <span><strong>Chegar</strong> — Conheça o Encontro e tome um café.</span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span><strong>A Trilha de Novos</strong> — Estação 1: descubra sua identidade em Deus.</span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span><strong>Pertencer</strong> — Faça parte de um PG e sirva a cidade.</span>
+        </li>
+      </ol>
+      <div class="card card-dark" style="margin-top: 2rem;">
+        <h3>Está chegando agora?</h3>
+        <p>A <strong>Trilha de Novos (Estação 1)</strong> é um espaço acolhedor de 9 encontros feito para você entender quem é diante de Deus, encontrar ferramentas práticas para a ansiedade do dia a dia (como o <em>C.A.F.É.</em> — cuidar do Coração, Alma, Força e Entendimento — e o <em>G.A.P.I.S.</em> — Gratidão, Adoração, Perdão, Intercessão e Súplica) e descobrir o seu lugar no vitral.</p>
+        <p><a class="btn btn-outline" href="/jornada.html">Quero conhecer a Trilha de Novos</a></p>
+        <p style="margin-top: 1rem;">Quem já está caminhando também tem um tempo especial de pausa: o <strong>Grande Banquete</strong>, imersão de 72 horas de graça e renovação à mesa. <a href="/grande-banquete.html">Conheça a experiência</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>A mesa está posta. Há um lugar no vitral reservado para você.</h2>
+      <p class="section-lead">Venha tomar um café conosco neste domingo. Estamos na Região Leste de São José do Rio Preto, às 10h.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/contato.html">Quero visitar este domingo</a>
+        <a class="btn btn-outline-dark" href="https://wa.me/5517996195302" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      </div>
+      <div class="card" style="margin-top: 2rem;">
+        <h3>Onde e quando</h3>
+        <p><strong>Domingos às 10h</strong> · café de acolhida 30 minutos antes.</p>
+        <p>Av. Sebastião Tavares da Silva, 1191 — Jardim Vista Alegre, São José do Rio Preto/SP.</p>
+        <div class="hero-cta">
+          <a class="btn btn-outline-dark" href="https://www.google.com/maps/search/?api=1&query=Avenida+Sebasti%C3%A3o+Tavares+da+Silva+1191+S%C3%A3o+Jos%C3%A9+do+Rio+Preto" target="_blank" rel="noopener">Traçar rota no Google Maps</a>
+          <a class="btn btn-outline-dark" href="https://waze.com/ul?q=Avenida%20Sebasti%C3%A3o%20Tavares%20da%20Silva%201191%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto&navigate=yes" target="_blank" rel="noopener">Abrir no Waze</a>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2>How I work</h2>
-    <div class="grid-2">
-      <div class="card card-raised card-interactive">
-        <p class="card-title">Stop browsing</p>
-        <p class="card-body">First pass: search terms, site: filters, saved tab groups. After 20 minutes, stop even if nothing feels "enough."</p>
-      </div>
-      <div class="card card-raised card-interactive">
-        <p class="card-title">Open three sources</p>
-        <p class="card-body">One overview, one practitioner explainer, one primary source or official guidance. That is usually enough.</p>
-      </div>
-      <div class="card card-raised card-interactive">
-        <p class="card-title">Write it in your words</p>
-        <p class="card-body">One paragraph. One step you would actually do. If you cannot explain the action, you do not have a how-to yet.</p>
-      </div>
-      <div class="card card-raised card-interactive">
-        <p class="card-title">Check before saving</p>
-        <p class="card-body">One fact check, one source link, one date. If it feels urgent, slow down; urgency is usually noise.</p>
+    <div class="container">
+      <h2>Sua fé vivida no ritmo do dia a dia</h2>
+      <p class="section-lead">Acreditamos que a fé se sustenta como um cordão de três dobras: firme, pé no chão e integrada à vida real.</p>
+      <div class="table-wrap">
+        <table class="table-bank">
+          <thead>
+            <tr>
+              <th>Pilar</th>
+              <th>O que é</th>
+              <th>Como acontece na prática</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Encontro</strong></td>
+              <td>A celebração comunitária aos domingos</td>
+              <td>Onde renovamos a esperança, ouvimos a Palavra de forma simples e lembramos que não caminhamos sós.</td>
+            </tr>
+            <tr>
+              <td><strong>Casa</strong></td>
+              <td>A fé vivida na rotina</td>
+              <td>Na mesa de jantar, no trabalho, nas conversas de família e na oração sincera no trânsito.</td>
+            </tr>
+            <tr>
+              <td><strong>Pequeno Grupo (PG)</strong></td>
+              <td>Cuidado de perto e amizade profunda</td>
+              <td>Grupos menores (4 a 12 pessoas) durante a semana para partilhar a vida, orar e se apoiar sem julgamentos.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Recent notes</h2>
-    <div class="grid-3">
-      <a href="/guide/" class="card card-interactive card-link">
-        <div class="card-image">
-          <img src="/note-placeholder-1.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
-        </div>
-        <p class="card-title">A fast checklist for noisy mornings</p>
-        <span class="card-meta">Start with a 5-minute routine</span>
-      </a>
-      <a href="/guide/" class="card card-interactive card-link">
-        <div class="card-image">
-          <img src="/note-placeholder-2.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
-        </div>
-        <p class="card-title">How I stopped repeating searches for the same topic</p>
-        <span class="card-meta">Save one phrase, one source, one step</span>
-      </a>
-      <a href="/guide/" class="card card-interactive card-link">
-        <div class="card-image">
-          <img src="/note-placeholder-3.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
-        </div>
-        <p class="card-title">Writing notes you will actually reread</p>
-        <span class="card-meta">One title, one example, one check</span>
-      </a>
+  <section class="section section-dark">
+    <div class="container">
+      <h2>Simples na forma, profundos nas raízes</h2>
+      <p class="section-lead">A Vitral é uma comunidade vibrante e acolhedora, com um alicerce histórico e teológico muito sólido. Fazemos parte da <strong>Igreja Presbiteriana Independente do Brasil (IPIB)</strong>, a primeira denominação evangélica genuinamente brasileira, fundada em 1903.</p>
+      <div class="grid">
+        <article class="card card-dark">
+          <h3>Teologia Reformada e Protestante</h3>
+          <p>Acreditamos que a salvação é um presente gracioso de Deus, recebido pela fé em Cristo, sem que você precise "merecer" ou se esforçar para ser aceito.</p>
+        </article>
+        <article class="card card-dark">
+          <h3>Bíblia Acessível (NVT)</h3>
+          <p>Usamos a Nova Versão Transformadora, unindo fidelidade aos textos originais com uma linguagem clara e contemporânea.</p>
+        </article>
+        <article class="card card-dark">
+          <h3>Governança Transparente</h3>
+          <p>Somos uma igreja com gestão participativa, transparente e focada no cuidado pastoral e no serviço à cidade de São José do Rio Preto.</p>
+        </article>
+      </div>
+      <p><a class="btn btn-outline" href="/quem-somos.html">Saiba mais sobre nossa história, liderança e a IPIB</a></p>
     </div>
   </section>
-
-  <section class="section callout">
-    <p class="card-body callout-lead">Start with the guide if you want one concrete workflow instead of philosophy.</p>
-    <p class="section-cta">
-      <a href="/guide/" class="link-underline">Open the guide -></a>
-    </p>
-  </section>
-
-  <style>
-    .section + .section {
-      margin-top: 3rem;
-    }
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      align-items: center;
-    }
-    @media (min-width: 768px) {
-      .hero {
-        grid-template-columns: 1.1fr 0.9fr;
-      }
-    }
-    .hero-copy h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
-      line-height: 1.05;
-      color: var(--color-navy);
-      margin: 0 0 0.75rem;
-    }
-    .hero-copy p {
-      color: var(--color-ink-muted);
-      margin: 0 0 0.6rem;
-    }
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 0.75rem;
-    }
-    .hero-media {
-      display: flex;
-      justify-content: center;
-    }
-    .hero-image {
-      width: 100%;
-      max-width: 640px;
-      border-radius: var(--radius-xl);
-      overflow: hidden;
-      box-shadow: var(--shadow-elevated);
-      border: 1px solid var(--color-border);
-      background: linear-gradient(135deg, rgba(13,125,113,0.18), rgba(15,23,42,0.18));
-      position: relative;
-    }
-    .hero-image::before {
-      content: "";
-      display: block;
-      padding-top: 66%;
-    }
-    .hero-image img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .card-image {
-      width: 100%;
-      border-radius: 0.5rem;
-      overflow: hidden;
-      background: linear-gradient(135deg, rgba(13,125,113,0.14), rgba(15,23,42,0.10));
-      margin-bottom: 0.6rem;
-      border: 1px solid var(--color-border);
-    }
-    .card-image::before {
-      content: "";
-      display: block;
-      padding-top: 56.25%;
-    }
-    .card-image img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .grid-3 .card {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-    }
-  </style>
-</BaseLayout>
+</VitralLayout>

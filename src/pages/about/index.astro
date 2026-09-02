@@ -1,55 +1,43 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import VitralLayout from '../../layouts/VitralLayout.astro';
 ---
 
-<BaseLayout
+<VitralLayout
   title="About testsite"
   description="A small personal project about clear, practical notes and honest how-to writing."
+  bodyClass="home"
 >
-
   <section class="section">
-    <h1>About testsite.</h1>
-    <p>This is a personal project built as a clean, static place for practical notes. It is intentionally small.</p>
-    <p>The focus is how-to content: one goal, one reusable action, one source, one check. If a note cannot be used again, it should be rewritten or deleted.</p>
-    <p>The site is built with Astro, deployed to GitHub Pages, and kept close to plain HTML.</p>
-  </section>
-
-  <section class="section grid-2">
-    <div class="card card-raised card-interactive">
-      <h2 class="card-title">What this is</h2>
-      <p class="card-body">A public notebook for practical notes, reusable steps, and honest writing.</p>
-    </div>
-    <div class="card card-raised card-interactive">
-      <h2 class="card-title">What this is not</h2>
-      <p class="card-body">Not a productivity brand, not a course, not a template store. No newsletter wall.</p>
+    <div class="container">
+      <h1>About testsite.</h1>
+      <p>This is a personal project built as a clean, static place for practical notes. It is intentionally small.</p>
+      <p>The focus is how-to content: one goal, one reusable action, one source, one check. If a note cannot be used again, it should be rewritten or deleted.</p>
+      <p>The site is built with Astro, deployed to GitHub Pages, and kept close to plain HTML.</p>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Contact</h2>
-    <p class="card-body">You can reach the project maintainer through GitHub issues in this repository.</p>
-    <p class="section-cta">
-      <a href="https://github.com/ismaelmmachado/testsite" class="link-underline">github.com/ismaelmmachado/testsite -></a>
-    </p>
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="card">
+          <h2 class="card-title">What this is</h2>
+          <p class="card-body">A public notebook for practical notes, reusable steps, and honest writing.</p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">What this is not</h2>
+          <p class="card-body">Not a productivity brand, not a course, not a template store. No newsletter wall.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <style>
-    .section + .section {
-      margin-top: 2.75rem;
-    }
-    .section h1 {
-      font-size: clamp(2rem, 4.5vw, 2.8rem);
-      font-weight: 700;
-      color: var(--color-navy);
-      margin: 0 0 0.75rem;
-      line-height: 1.1;
-    }
-    .section h2 {
-      color: var(--color-navy);
-      margin: 0 0 0.75rem;
-    }
-    .section p {
-      color: var(--color-ink-muted);
-    }
-  </style>
-</BaseLayout>
+  <section class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="card-body">You can reach the project maintainer through GitHub issues in this repository.</p>
+      <p class="section-cta">
+        <a href="https://github.com/ismaelmmachado/testsite" class="link-underline">github.com/ismaelmmachado/testsite -></a>
+      </p>
+    </div>
+  </section>
+</VitralLayout>
