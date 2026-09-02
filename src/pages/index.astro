@@ -6,56 +6,164 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="How I think about clear, practical notes"
   description="A small personal system for learning, saving, and acting without getting lost in research loops."
 >
+
   <section class="section">
-    <h1>Clear notes, not research loops.</h1>
-    <p>This site is a working notebook for a simple idea: if it is not practical, it is not finished yet.</p>
-    <p>I share short how-to notes with real steps, real caveats, and just enough background to avoid wasted searching later.</p>
+    <div class="hero">
+      <div class="hero-copy">
+        <h1>Clear notes, not research loops.</h1>
+        <p>This site is a working notebook for a simple idea: if it is not practical, it is not finished yet.</p>
+        <p>I share short how-to notes with real steps, real caveats, and just enough background to avoid wasted searching later.</p>
+        <div class="hero-actions">
+          <a href="/guide/" class="btn-primary">Start with the guide</a>
+          <a href="/about/" class="btn-secondary">About this project</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-image">
+          <img src="/hero-placeholder.svg" alt="Editorial hero illustration" width="640" height="420" loading="eager" />
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="section">
     <h2>How I work</h2>
-    <div class="list">
-      <div class="list-item card">
-        <p style="font-weight:600">Stop browsing</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">First pass: search terms, site: filters, saved tab groups. After 20 minutes, stop even if nothing feels "enough."</p>
+    <div class="grid-2">
+      <div class="card card-raised card-interactive">
+        <p style="font-weight:700">Stop browsing</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">First pass: search terms, site: filters, saved tab groups. After 20 minutes, stop even if nothing feels "enough."</p>
       </div>
-      <div class="list-item card">
-        <p style="font-weight:600">Open three sources</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">One overview, one practitioner explainer, one primary source or official guidance. That is usually enough.</p>
+      <div class="card card-raised card-interactive">
+        <p style="font-weight:700">Open three sources</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">One overview, one practitioner explainer, one primary source or official guidance. That is usually enough.</p>
       </div>
-      <div class="list-item card">
-        <p style="font-weight:600">Write it in your words</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">One paragraph. One step you would actually do. If you can not explain the action, you do not have a how-to yet.</p>
+      <div class="card card-raised card-interactive">
+        <p style="font-weight:700">Write it in your words</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">One paragraph. One step you would actually do. If you cannot explain the action, you do not have a how-to yet.</p>
       </div>
-      <div class="list-item card">
-        <p style="font-weight:600">Check before saving</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">One fact check, one source link, one date. If it feels urgent, slow down; urgency is usually noise.</p>
+      <div class="card card-raised card-interactive">
+        <p style="font-weight:700">Check before saving</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">One fact check, one source link, one date. If it feels urgent, slow down; urgency is usually noise.</p>
       </div>
     </div>
   </section>
 
   <section class="section">
     <h2>Recent notes</h2>
-    <div class="list">
-      <a href="/guide/" class="list-item card" style="display:block;text-decoration:none">
-        <span style="font-weight:500;color:var(--color-ink)">A fast checklist for noisy mornings</span>
-        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.25rem">Updated recently</span>
+    <div class="grid-3">
+      <a href="/guide/" class="card card-interactive" style="display:block;text-decoration:none">
+        <div class="card-image">
+          <img src="/note-placeholder-1.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
+        </div>
+        <p style="font-weight:600;color:var(--color-ink)">A fast checklist for noisy mornings</p>
+        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.35rem">Updated recently</span>
       </a>
-      <a href="/guide/" class="list-item card" style="display:block;text-decoration:none">
-        <span style="font-weight:500;color:var(--color-ink)">How I stopped repeating searches for the same topic</span>
-        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.25rem">Updated recently</span>
+      <a href="/guide/" class="card card-interactive" style="display:block;text-decoration:none">
+        <div class="card-image">
+          <img src="/note-placeholder-2.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
+        </div>
+        <p style="font-weight:600;color:var(--color-ink)">How I stopped repeating searches for the same topic</p>
+        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.35rem">Updated recently</span>
       </a>
-      <a href="/guide/" class="list-item card" style="display:block;text-decoration:none">
-        <span style="font-weight:500;color:var(--color-ink)">Writing notes you will actually reread</span>
-        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.25rem">Updated recently</span>
+      <a href="/guide/" class="card card-interactive" style="display:block;text-decoration:none">
+        <div class="card-image">
+          <img src="/note-placeholder-3.svg" alt="Note thumbnail" width="640" height="360" loading="lazy" />
+        </div>
+        <p style="font-weight:600;color:var(--color-ink)">Writing notes you will actually reread</p>
+        <span style="display:block;font-size:0.85rem;color:var(--color-ink-muted);margin-top:0.35rem">Updated recently</span>
       </a>
     </div>
   </section>
 
   <section class="section callout">
     <p style="color:var(--color-ink);margin:0">Start with the guide if you want one concrete workflow instead of philosophy.</p>
-    <p style="margin-top:0.5rem">
-      <a href="/guide/" style="font-weight:600;text-decoration:underline;text-underline-offset:2px">Open the guide -></a>
+    <p style="margin-top:0.6rem">
+      <a href="/guide/" style="font-weight:700;text-decoration:underline;text-underline-offset:2px">Open the guide -></a>
     </p>
   </section>
+
+  <style>
+    .section + .section {
+      margin-top: 3rem;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .hero {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+    }
+    .hero-copy h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--color-navy);
+      margin: 0 0 0.75rem;
+    }
+    .hero-copy p {
+      color: var(--color-ink-muted);
+      margin: 0 0 0.6rem;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .hero-media {
+      display: flex;
+      justify-content: center;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 640px;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-elevated);
+      border: 1px solid var(--color-border);
+      background: linear-gradient(135deg, rgba(13,125,113,0.18), rgba(15,23,42,0.18));
+      position: relative;
+    }
+    .hero-image::before {
+      content: "";
+      display: block;
+      padding-top: 66%;
+    }
+    .hero-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-image {
+      width: 100%;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(13,125,113,0.14), rgba(15,23,42,0.10));
+      margin-bottom: 0.6rem;
+      border: 1px solid var(--color-border);
+    }
+    .card-image::before {
+      content: "";
+      display: block;
+      padding-top: 56.25%;
+    }
+    .card-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .grid-3 .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </BaseLayout>

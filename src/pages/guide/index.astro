@@ -6,6 +6,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   title="A practical note-taking guide"
   description="A small workflow for turning research into reusable notes without endless browsing."
 >
+
   <section class="section">
     <h1>A practical note-taking guide.</h1>
     <p>This is a short workflow, not a productivity system. It is meant for days when you want to learn something, use it, and move on.</p>
@@ -15,21 +16,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <section class="section">
     <h2>Workflow</h2>
     <div class="list">
-      <div class="list-item card">
-        <p style="font-weight:600">Step 1: Pick one goal</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">Write the smallest version of what you want to learn or build. If it fits on one sticky note, it is real.</p>
+      <div class="list-item card card-raised card-interactive">
+        <p style="font-weight:700">Step 1: Pick one goal</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">Write the smallest version of what you want to learn or build. If it fits on one sticky note, it is real.</p>
       </div>
-      <div class="list-item card">
-        <p style="font-weight:600">Step 2: Collect three useful sources</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">One clear explanation, one example, one source you can cite if someone asks where it came from.</p>
+      <div class="list-item card card-raised card-interactive">
+        <p style="font-weight:700">Step 2: Collect three useful sources</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">One clear explanation, one example, one source you can cite if someone asks where it came from.</p>
       </div>
-      <div class="list-item card">
-        <p style="font-weight:600">Step 3: Extract one reusable action</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">Not a summary. An action you would repeat next week. If there is no action, delete the note.</p>
+      <div class="list-item card card-raised card-interactive">
+        <p style="font-weight:700">Step 3: Extract one reusable action</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">Not a summary. An action you would repeat next week. If there is no action, delete the note.</p>
       </div>
-      <div class="list-item card">
-        <p style="font-weight:600">Step 4: Make it easy to reuse</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">Add a title, one example, one check, and one source link. Later, you will thank yourself.</p>
+      <div class="list-item card card-raised card-interactive">
+        <p style="font-weight:700">Step 4: Make it easy to reuse</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">Add a title, one example, one check, and one source link. Later, you will thank yourself.</p>
       </div>
     </div>
   </section>
@@ -37,25 +38,45 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <section class="section">
     <h2>Examples</h2>
     <div class="grid-3">
-      <div class="card card-raised">
-        <p style="font-weight:600">Noisy morning</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">Use a 5-minute starter: one drink of water, one task, one notification block. No big plan.</p>
+      <div class="card card-raised card-interactive">
+        <p style="font-weight:700">Noisy morning</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">Use a 5-minute starter: one drink of water, one task, one notification block. No big plan.</p>
       </div>
-      <div class="card card-raised">
-        <p style="font-weight:600">Repeated search</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">Save the exact phrase, the best source, and the step you used. Next time, open your note first.</p>
+      <div class="card card-raised card-interactive">
+        <p style="font-weight:700">Repeated search</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">Save the exact phrase, the best source, and the step you used. Next time, open your note first.</p>
       </div>
-      <div class="card card-raised">
-        <p style="font-weight:600">Learning in public</p>
-        <p style="color:var(--color-ink-muted);margin-top:0.25rem">Share one sentence about what you changed and one result. That is enough to stay accountable.</p>
+      <div class="card card-raised card-interactive">
+        <p style="font-weight:700">Learning in public</p>
+        <p style="color:var(--color-ink-muted);margin-top:0.35rem">Share one sentence about what you changed and one result. That is enough to stay accountable.</p>
       </div>
     </div>
   </section>
 
   <section class="section callout">
     <p style="color:var(--color-ink);margin:0">If you want, next step is the about page, where this project and its limits are stated plainly.</p>
-    <p style="margin-top:0.5rem">
-      <a href="/about/" style="font-weight:600;text-decoration:underline;text-underline-offset:2px">Read the about page -></a>
+    <p style="margin-top:0.6rem">
+      <a href="/about/" style="font-weight:700;text-decoration:underline;text-underline-offset:2px">Read the about page -></a>
     </p>
   </section>
+
+  <style>
+    .section + .section {
+      margin-top: 2.75rem;
+    }
+    .section h1 {
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--color-navy);
+      margin: 0 0 0.75rem;
+      line-height: 1.1;
+    }
+    .section h2 {
+      color: var(--color-navy);
+      margin: 0 0 0.75rem;
+    }
+    .section p {
+      color: var(--color-ink-muted);
+    }
+  </style>
 </BaseLayout>

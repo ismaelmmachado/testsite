@@ -6,6 +6,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   title="About testsite"
   description="A small personal project about clear, practical notes and honest how-to writing."
 >
+
   <section class="section">
     <h1>About testsite.</h1>
     <p>This is a personal project built as a clean, static place for practical notes. It is intentionally small.</p>
@@ -14,11 +15,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <section class="section grid-2">
-    <div class="card">
+    <div class="card card-raised card-interactive">
       <h2 style="font-family:var(--font-heading);font-size:1.05rem;font-weight:700;margin-bottom:0.5rem">What this is</h2>
       <p style="color:var(--color-ink-muted)">A public notebook for practical notes, reusable steps, and honest writing.</p>
     </div>
-    <div class="card">
+    <div class="card card-raised card-interactive">
       <h2 style="font-family:var(--font-heading);font-size:1.05rem;font-weight:700;margin-bottom:0.5rem">What this is not</h2>
       <p style="color:var(--color-ink-muted)">Not a productivity brand, not a course, not a template store. No newsletter wall.</p>
     </div>
@@ -31,4 +32,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <a href="https://github.com/ismaelmmachado/testsite" style="font-weight:600;text-decoration:underline;text-underline-offset:2px">github.com/ismaelmmachado/testsite -></a>
     </p>
   </section>
+
+  <style>
+    .section + .section {
+      margin-top: 2.75rem;
+    }
+    .section h1 {
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--color-navy);
+      margin: 0 0 0.75rem;
+      line-height: 1.1;
+    }
+    .section h2 {
+      color: var(--color-navy);
+      margin: 0 0 0.75rem;
+    }
+    .section p {
+      color: var(--color-ink-muted);
+    }
+  </style>
 </BaseLayout>
