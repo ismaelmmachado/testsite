@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-02T11:25:00Z",
+  "title": "Design System: testsite",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#111318" },
+      "ink-muted": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#5b5f6b" },
+      "surface": { "role": "neutral", "displayName": "Surface", "canonical": "#ffffff" },
+      "surface-raised": { "role": "neutral", "displayName": "Raised Surface", "canonical": "#f6f6f8" },
+      "border": { "role": "neutral", "displayName": "Border", "canonical": "#e4e4e7" },
+      "accent": { "role": "accent", "displayName": "Blue Link", "canonical": "#2563eb" },
+      "navy": { "role": "structural", "displayName": "Navy Structure", "canonical": "#0f172a" },
+      "teal": { "role": "primary", "displayName": "Teal Action", "canonical": "#0d7d71" },
+      "warm": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f4efe6" },
+      "rose": { "role": "neutral", "displayName": "Rose", "canonical": "#c87b7b" }
+    },
+    "typographyMeta": {
+      "heading": { "displayName": "Heading", "purpose": "Hero and page titles." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs and long-form reading." },
+      "label": { "displayName": "Label", "purpose": "Nav, metadata, and captions." }
+    },
+    "shadows": [
+      { "name": "card-shadow", "value": "0 6px 18px rgba(17, 19, 24, 0.08)", "purpose": "Raised cards." },
+      { "name": "elevated-shadow", "value": "0 12px 28px rgba(17, 19, 24, 0.12)", "purpose": "Hero media and high-emphasis surfaces." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "180ms ease", "purpose": "Default card and button state transitions." }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary CTA button using teal action color.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Open the guide -></a>",
+      "css": ".ds-btn-primary { background: #0d7d71; color: #fff; padding: 0.85rem 1.6rem; border-radius: 0.75rem; font-weight: 600; text-decoration: none; transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease; } .ds-btn-primary:hover { background: #07635b; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(13,125,113,0.22); } .ds-btn-primary:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.35rem; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary action button with transparent background.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">About this project</a>",
+      "css": ".ds-btn-secondary { background: transparent; color: #fff; border: 2px solid #fff; padding: 0.85rem 1.6rem; border-radius: 0.75rem; font-weight: 600; text-decoration: none; transition: background 180ms ease, color 180ms ease; } .ds-btn-secondary:hover { background: rgba(255,255,255,0.12); color: #fff; } .ds-btn-secondary:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.35rem; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Standard content card with optional raised state.",
+      "html": "<article class=\"ds-card ds-card-raised ds-card-interactive\"><p class=\"ds-card-title\">Step 1</p><p class=\"ds-card-body\">Write the smallest version of what you want to learn or build.</p></article>",
+      "css": ".ds-card { border: 1px solid #e4e4e7; border-radius: 0.5rem; padding: 1rem; background: #ffffff; } .ds-card-raised { background: #f6f6f8; } .ds-card-interactive { cursor: pointer; transition: border-color 180ms ease, box-shadow 180ms ease; } .ds-card-interactive:hover { border-color: #0d7d71; box-shadow: 0 6px 18px rgba(17,19,24,0.08); } .ds-card-title { font-family: Merriweather, Georgia, serif; font-weight: 700; font-size: 1.05rem; line-height: 1.25; color: #0f172a; margin-bottom: 0.5rem; } .ds-card-body { color: #5b5f6b; margin-top: 0.35rem; } .ds-card-interactive:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.35rem; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Minimal top navigation with brand and active state.",
+      "html": "<nav aria-label=\"Primary\"><a class=\"ds-nav-link\" aria-current=\"page\" href=\"/\">Home</a><a class=\"ds-nav-link\" href=\"/guide/\">Guide</a></nav>",
+      "css": ".ds-nav-link { margin-left: 1rem; font-size: 0.9rem; color: #5b5f6b; text-decoration: none; } .ds-nav-link:hover { color: #111318; } .ds-nav-link[aria-current=\'page\'] { color: #0f172a; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; } .ds-nav-link:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 0.35rem; }"
+    },
+    {
+      "name": "Callout",
+      "kind": "custom",
+      "refersTo": "callout",
+      "description": "Light callout block for secondary CTAs.",
+      "html": "<aside class=\"ds-callout\"><p class=\"ds-callout-lead\">Start with the guide if you want one concrete workflow.</p><p class=\"ds-section-cta\"><a class=\"ds-link-underline\" href=\"/guide/\">Open the guide -></a></p></aside>",
+      "css": ".ds-callout { padding: 0.75rem 1rem; background: #f6f6f8; border-radius: 0.5rem; } .ds-callout-lead { color: #111318; margin: 0; } .ds-section-cta { margin-top: 0.6rem; } .ds-link-underline { font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Working Notebook",
+    "overview": "testsite is a calm, minimal notebook for practical AI workflow tutorials. Its design system prioritizes readability, reuse, and restrained emphasis over decorative visuals.",
+    "keyCharacteristics": [
+      "Token-first styling with minimal inline exceptions",
+      "Editorial typography using Merriweather and Inter",
+      "Restrained teal accent with neutral surfaces",
+      "Clear card hierarchy and consistent spacing",
+      "Accessible focus and navigation states"
+    ],
+    "rules": [
+      { "name": "The Restraint Rule", "body": "Accent color appears on meaningful actions only; avoid decorative saturation.", "section": "colors" },
+      { "name": "The One Type Rule", "body": "One heading role per section; avoid stacking multiple heading weights in the same card.", "section": "typography" },
+      { "name": "The Flat Rest Rule", "body": "Surfaces are flat at rest; elevation appears only for cards in raised states or hover/focus emphasis.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep inline styles out of page markup; prefer shared utilities and tokens.",
+      "Do preserve visible focus states for nav, buttons, and cards.",
+      "Do use restrained accent color only at action points."
+    ],
+    "donts": [
+      "Don't add decorative gradients or heavy imagery unless they reinforce the notebook metaphor.",
+      "Don't introduce new accent colors without mapping them to a token.",
+      "Don't weaken typographic hierarchy by equalizing card weights."
+    ]
+  }
+}
